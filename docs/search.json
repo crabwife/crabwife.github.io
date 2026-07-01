@@ -32,7 +32,7 @@
     "href": "cv.html#research-experience",
     "title": "Curriculum Vitae",
     "section": "Research Experience",
-    "text": "Research Experience\n\nResearch Assistant\nVermont Complex Systems Institute\nMay 2026–present\n\nDevelop stochastic models of scientific-productivity trajectories.\nCompare simulated and empirical career-level distributions.\nStudy history dependence, self-excitation, inactivity, and rank persistence.\nBuild reproducible research and analysis pipelines in Python.\nEvaluate generative models using distributional, predictive, and trajectory-level diagnostics.\n\n\n\n[Position Title]\nBoston University Marine Program\nSeptember 2022–January 2024\n\nPlacehold\nPlacehold\nPlacehold"
+    "text": "Research Experience\n\nResearch Assistant\nVermont Complex Systems Institute\nMay 2026–present\n\nDevelop stochastic models of scientific-productivity trajectories.\nCompare simulated and empirical career-level distributions.\nStudy history dependence, self-excitation, inactivity, and rank persistence.\nBuild reproducible research and analysis pipelines in Python.\nEvaluate generative models using distributional, predictive, and trajectory-level diagnostics.\n\n\n\n[Principal Undergraduate Investigator]\nBoston University Marine Program\nSeptember 2022–January 2023"
   },
   {
     "objectID": "cv.html#publications",
@@ -53,7 +53,7 @@
     "href": "cv.html#technical-skills",
     "title": "Curriculum Vitae",
     "section": "Technical Skills",
-    "text": "Technical Skills\nProgramming: Python, R, SQL, Rust\nScientific computing and machine learning: pandas, NumPy, SciPy, scikit-learn, Matplotlib, TensorFlow, XGBoost\nResearch and visualization tools: Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau\nMethods: Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization"
+    "text": "Technical Skills\nProgramming: Python, R, SQL, Rust\nScientific computing and machine learning: pandas, NumPy, SciPy, scikit-learn, Matplotlib/seaborn, TensorFlow, XGBoost\nResearch and visualization tools: Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau\nMethods: Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization"
   },
   {
     "objectID": "cv.html#affiliations",
@@ -67,7 +67,7 @@
     "href": "cv.html#contact",
     "title": "Curriculum Vitae",
     "section": "Contact",
-    "text": "Contact\nEmail: samantha.magid@uvm.edu\nGitHub: crabwife LinkedIn: Samantha Magid"
+    "text": "Contact\nEmail: samantha.magid@uvm.edu\nGitHub: crabwife\nLinkedIn: Samantha Magid"
   },
   {
     "objectID": "publications.html",
@@ -165,7 +165,7 @@
     "href": "index.html#current-research",
     "title": "Samantha Magid",
     "section": "Current Research",
-    "text": "Current Research\nMy current work asks whether persistent differences in scientific productivity can emerge from parsimonious, history-dependent stochastic processes without requiring stable inherent differences among scholars. The work seeks to debunk the eugenicist, racist suggestions of William Shockley, the white, male Nobel laureate who felt science was too egalitarian for its rewards to be anything but representative of individual merit. Shockley suggested that scientific productivity was the probabilistic result of inherent, immutable, individual traits. As we develop a follow-up to Scientific Productivity as a Random Walk, we scientifically validate a long-overdue departure from Shockley’s bad science.\nRead more about my research →"
+    "text": "Current Research\nMy current work asks whether persistent differences in scientific productivity can emerge from parsimonious, history-dependent stochastic processes without requiring stable inherent differences among scholars. The work seeks to debunk the eugenicist, racist suggestions of William Shockley, the white, male Nobel laureate who felt science was too egalitarian for its rewards to be anything but representative of individual merit. Shockley suggested that scientific productivity was the probabilistic result of inherent, immutable, individual traits. As we develop a follow-up to Scientific Productivity as a Random Walk, we scientifically validate a long-overdue departure from Shockley’s notions.\nRead more about my research →"
   },
   {
     "objectID": "about.html",
