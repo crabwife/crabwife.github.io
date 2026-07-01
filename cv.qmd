@@ -51,14 +51,10 @@ May 2026–present
 - Build reproducible research and analysis pipelines in Python.
 - Evaluate generative models using distributional, predictive, and trajectory-level diagnostics.
 
-### [Position Title]
+### [Principal Undergraduate Investigator]
 
 **Boston University Marine Program**  
-September 2022–January 2024
-
-- Placehold
-- Placehold
-- Placehold
+September 2022–January 2023
 
 ## Publications
 
@@ -72,7 +68,7 @@ Presentations, posters, and invited talks will be listed here.
 
 **Programming:** Python, R, SQL, Rust
 
-**Scientific computing and machine learning:** pandas, NumPy, SciPy, scikit-learn, Matplotlib, TensorFlow, XGBoost
+**Scientific computing and machine learning:** pandas, NumPy, SciPy, scikit-learn, Matplotlib/seaborn, TensorFlow, XGBoost
 
 **Research and visualization tools:** Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau
 
@@ -80,13 +76,13 @@ Presentations, posters, and invited talks will be listed here.
 
 ## Affiliations
 
-- Vermont Complex Systems Institute under [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
-- Boston University Faculty of Computing & Data Sciences under [Dr. Mayank Varia](https://www.mvaria.com/)
+- Vermont Complex Systems Institute _under_ [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
+- Boston University Faculty of Computing & Data Sciences _under_ [Dr. Mayank Varia](https://www.mvaria.com/)
 - Boston University Spark! Program
-- Boston University Marine Program under [Dr. Robinson Fulweiler](https://www.fulweilerlab.com/)
+- Boston University Marine Program _under_ [Dr. Robinson Fulweiler](https://www.fulweilerlab.com/)
 
 ## Contact
 
 **Email:** [samantha.magid@uvm.edu](mailto:samantha.magid@uvm.edu)  
-**GitHub:** [crabwife](https://github.com/crabwife)
-**LinkedIn:** [Samantha Magid](https://www.linkedin.com/in/samantha-magid/)
+**GitHub:** [crabwife](https://github.com/crabwife)     
+**LinkedIn:** [Samantha Magid](https://www.linkedin.com/in/samantha-magid/)     
