@@ -21,6 +21,12 @@ website:
       - icon: github
         href: https://github.com/crabwife
 
+  page-footer:
+    border: true
+    left: "© 2026 Samantha Magid"
+    center: "[Vermont Complex Systems Institute](https://vermontcomplexsystems.org/)"
+    right: "[Email](mailto:samantha.magid@uvm.edu) · [ORCID](https://orcid.org/0009-0004-0358-4870) · [GitHub](https://github.com/crabwife) · [CV](cv.html) · [Writing](https://sefermiriam.substack.com/)"
+
 format:
   html:
     theme: cosmo
