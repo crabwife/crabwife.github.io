@@ -1,6 +1,6 @@
 ---
 pagetitle: "Samantha Magid"
-description: "Samantha Magid is an applied and computational mathematician studying complex systems, scientific productivity, and stochastic processes."
+description: "Samantha Magid is an applied and computational mathematician studying complex systems, metascience, and stochastic processes at the Vermont Complex Systems Institute."
 toc: false
 page-layout: full
 ---
@@ -15,7 +15,7 @@ page-layout: full
 
 # Samantha Magid
 
-Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Unapologetic gay woman in STEM.
+Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Researcher at the Science and Humanity Lab. Unapologetic gay woman in STEM.
 
 [Research](research.qmd) · [Publications](publications.qmd) · [CV](cv.qmd)
 
@@ -31,17 +31,17 @@ Applied and computational mathematician studying scientific productivity, stocha
 
 ::: {.program-logos}
 
+[![](images/scihumlab.png){.program-logo alt="Science and Humanity Lab"}](https://scienceandhumanitylab.github.io/){.logo-shl}
+
 [![](images/VCSI.png){.program-logo alt="Vermont Complex Systems Institute"}](https://vermontcomplexsystems.org/){.logo-vcsi}
 
 [![](images/UVM.png){.program-logo alt="University of Vermont"}](https://www.uvm.edu/){.logo-uvm}
 
-[![](images/CDS.png){.program-logo alt="Boston University Faculty of Computing and Data Sciences"}](https://www.bu.edu/cds-faculty/){.logo-cds}
-
 [![](images/BU_EE.png){.program-logo alt="Boston University Earth and Environment"}](https://www.bu.edu/earth/){.logo-buee}
 
-[![](images/BUMP.png){.program-logo alt="BUMP Labs"}](https://www.bu.edu/bump/){.logo-bump}
+[![](images/CDS.png){.program-logo alt="Boston University Faculty of Computing and Data Sciences"}](https://www.bu.edu/cds-faculty/){.logo-cds}
 
-[![](images/BU_SPARK.png){.program-logo alt="Boston University Spark"}](https://www.bu.edu/spark/){.logo-spark}
+[![](images/BUMP.png){.program-logo alt="BUMP Labs"}](https://www.bu.edu/bump/){.logo-bump}
 
 :::
 

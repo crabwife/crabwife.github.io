@@ -4,7 +4,7 @@ title: "Research"
 
 ## Scientific productivity as a stochastic process
 
-My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.
+My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.
 
 This work focuses on:
 

@@ -42,7 +42,7 @@ Faculty of Computing & Data Sciences
 
 ### Research Assistant
 
-**Vermont Complex Systems Institute**  
+**Science and Humanities Lab** | _Vermont Complex Systems Institute_ 
 May 2026–present
 
 - Develop stochastic models of scientific-productivity trajectories.
@@ -51,7 +51,7 @@ May 2026–present
 - Build reproducible research and analysis pipelines in Python.
 - Evaluate generative models using distributional, predictive, and trajectory-level diagnostics.
 
-### [Principal Undergraduate Investigator]
+### Principal Undergraduate Investigator
 
 **Boston University Marine Program**  
 September 2022–January 2023
@@ -76,10 +76,10 @@ Presentations, posters, and invited talks will be listed here.
 
 ## Affiliations
 
-- Vermont Complex Systems Institute _under_ [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
-- Boston University Faculty of Computing & Data Sciences _under_ [Dr. Mayank Varia](https://www.mvaria.com/)
+- Vermont Complex Systems Institute | with [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
+- Boston University Faculty of Computing & Data Sciences | with [Dr. Mayank Varia](https://www.mvaria.com/)
 - Boston University Spark! Program
-- Boston University Marine Program _under_ [Dr. Robinson Fulweiler](https://www.fulweilerlab.com/)
+- Boston University Marine Program | with [Dr. Robinson Fulweiler](https://www.fulweilerlab.com/)
 
 ## Contact
 
