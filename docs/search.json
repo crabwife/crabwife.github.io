@@ -32,7 +32,7 @@
     "href": "cv.html#research-experience",
     "title": "Curriculum Vitae",
     "section": "Research Experience",
-    "text": "Research Experience\n\nResearch Assistant\nVermont Complex Systems Institute\nMay 2026–present\n\nDevelop stochastic models of scientific-productivity trajectories.\nCompare simulated and empirical career-level distributions.\nStudy history dependence, self-excitation, inactivity, and rank persistence.\nBuild reproducible research and analysis pipelines in Python.\nEvaluate generative models using distributional, predictive, and trajectory-level diagnostics.\n\n\n\n[Principal Undergraduate Investigator]\nBoston University Marine Program\nSeptember 2022–January 2023"
+    "text": "Research Experience\n\nResearch Assistant\nScience and Humanities Lab | Vermont Complex Systems Institute May 2026–present\n\nDevelop stochastic models of scientific-productivity trajectories.\nCompare simulated and empirical career-level distributions.\nStudy history dependence, self-excitation, inactivity, and rank persistence.\nBuild reproducible research and analysis pipelines in Python.\nEvaluate generative models using distributional, predictive, and trajectory-level diagnostics.\n\n\n\nPrincipal Undergraduate Investigator\nBoston University Marine Program\nSeptember 2022–January 2023"
   },
   {
     "objectID": "cv.html#publications",
@@ -60,7 +60,7 @@
     "href": "cv.html#affiliations",
     "title": "Curriculum Vitae",
     "section": "Affiliations",
-    "text": "Affiliations\n\nVermont Complex Systems Institute under Dr. Sam Zhang\nBoston University Faculty of Computing & Data Sciences under Dr. Mayank Varia\nBoston University Spark! Program\nBoston University Marine Program under Dr. Robinson Fulweiler"
+    "text": "Affiliations\n\nVermont Complex Systems Institute | with Dr. Sam Zhang\nBoston University Faculty of Computing & Data Sciences | with Dr. Mayank Varia\nBoston University Spark! Program\nBoston University Marine Program | with Dr. Robinson Fulweiler"
   },
   {
     "objectID": "cv.html#contact",
@@ -116,14 +116,14 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
+    "text": "My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
   },
   {
     "objectID": "research.html#scientific-productivity-as-a-stochastic-process",
     "href": "research.html#scientific-productivity-as-a-stochastic-process",
     "title": "Research",
     "section": "",
-    "text": "My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
+    "text": "My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
   },
   {
     "objectID": "research.html#complex-systems",
@@ -158,7 +158,7 @@
     "href": "index.html",
     "title": "Samantha Magid",
     "section": "",
-    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Unapologetic gay woman in STEM.\nResearch · Publications · CV\n\nsamantha.magid@uvm.edu\nGitHub | Poems and other writings"
+    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Researcher at the Science and Humanity Lab. Unapologetic gay woman in STEM.\nResearch · Publications · CV\n\nsamantha.magid@uvm.edu\nGitHub | Poems and other writings"
   },
   {
     "objectID": "index.html#current-research",
