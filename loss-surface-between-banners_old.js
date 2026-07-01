@@ -65,26 +65,6 @@
     ambientSpeed: 0.00012,
     targetFramesPerSecond: 80,
 
-    // Mobile-only autonomous motion. Desktop values above and below
-    // remain unchanged.
-    mobileAmbientSpeed: 0.000072,
-    mobileTargetFramesPerSecond: 30,
-    mobilePointerStrength: 0.22,
-    mobilePointerSpringFrequency: 0.16,
-    mobilePointerSpringDamping: 0.92,
-    mobileLightSpringFrequency: 0.11,
-    mobileLightSpringDamping: 0.94,
-    mobileStrengthResponse: 0.34,
-    mobileTargetIntervalMinimum: 4800,
-    mobileTargetIntervalMaximum: 7800,
-    mobileTargetMinimumX: 0.27,
-    mobileTargetMaximumX: 0.73,
-    mobileTargetMinimumY: 0.28,
-    mobileTargetMaximumY: 0.72,
-    mobileMicroDriftX: 0.014,
-    mobileMicroDriftY: 0.011,
-    mobileMicroDriftSpeed: 0.00031,
-
     pointerAmplitude: 0.76,
     pointerSpreadX: 0.44,
     pointerSpreadY: 0.38,
@@ -161,14 +141,6 @@
     velocityY: 0
   };
 
-  const mobileMotion = {
-    targetX: 0.5,
-    targetY: 0.5,
-    nextTargetTime: 0,
-    phaseOffsetX: Math.random() * Math.PI * 2,
-    phaseOffsetY: Math.random() * Math.PI * 2
-  };
-
   let lastPointerMoveTime = -Infinity;
   let projectionLookup = [];
 
@@ -217,70 +189,7 @@
       object[velocityKey] * deltaSeconds;
   }
 
-  function chooseMobileTarget(timestamp) {
-    mobileMotion.targetX = lerp(
-      settings.mobileTargetMinimumX,
-      settings.mobileTargetMaximumX,
-      Math.random()
-    );
-
-    mobileMotion.targetY = lerp(
-      settings.mobileTargetMinimumY,
-      settings.mobileTargetMaximumY,
-      Math.random()
-    );
-
-    mobileMotion.nextTargetTime =
-      timestamp +
-      lerp(
-        settings.mobileTargetIntervalMinimum,
-        settings.mobileTargetIntervalMaximum,
-        Math.random()
-      );
-  }
-
-  function getMobileInteractionTarget(timestamp) {
-    if (
-      mobileMotion.nextTargetTime === 0 ||
-      timestamp >= mobileMotion.nextTargetTime
-    ) {
-      chooseMobileTarget(timestamp);
-    }
-
-    const driftPhase =
-      timestamp *
-      settings.mobileMicroDriftSpeed;
-
-    return {
-      x: clamp(
-        mobileMotion.targetX +
-          settings.mobileMicroDriftX *
-            Math.sin(
-              driftPhase +
-              mobileMotion.phaseOffsetX
-            ),
-        settings.mobileTargetMinimumX,
-        settings.mobileTargetMaximumX
-      ),
-      y: clamp(
-        mobileMotion.targetY +
-          settings.mobileMicroDriftY *
-            Math.cos(
-              driftPhase * 0.83 +
-              mobileMotion.phaseOffsetY
-            ),
-        settings.mobileTargetMinimumY,
-        settings.mobileTargetMaximumY
-      ),
-      strength: settings.mobilePointerStrength
-    };
-  }
-
   function getInteractionTarget(timestamp) {
-    if (mobileQuery.matches) {
-      return getMobileInteractionTarget(timestamp);
-    }
-
     if (!pointer.inside) {
       return {
         x: 0.5,
@@ -447,6 +356,7 @@
   function shouldAnimate() {
     return (
       !reducedMotionQuery.matches &&
+      !mobileQuery.matches &&
       !document.hidden
     );
   }
@@ -1239,11 +1149,7 @@
 
     const frameInterval =
       1000 /
-      (
-        mobileQuery.matches
-          ? settings.mobileTargetFramesPerSecond
-          : settings.targetFramesPerSecond
-      );
+      settings.targetFramesPerSecond;
 
     if (
       timestamp - previousFrameTime <
@@ -1273,33 +1179,13 @@
         region
       );
 
-    const pointerSpringFrequency =
-      mobileQuery.matches
-        ? settings.mobilePointerSpringFrequency
-        : settings.pointerSpringFrequency;
-
-    const pointerSpringDamping =
-      mobileQuery.matches
-        ? settings.mobilePointerSpringDamping
-        : settings.pointerSpringDamping;
-
-    const lightSpringFrequency =
-      mobileQuery.matches
-        ? settings.mobileLightSpringFrequency
-        : settings.lightSpringFrequency;
-
-    const lightSpringDamping =
-      mobileQuery.matches
-        ? settings.mobileLightSpringDamping
-        : settings.lightSpringDamping;
-
     stepSpring(
       pointer,
       "x",
       "velocityX",
       interactionTarget.x,
-      pointerSpringFrequency,
-      pointerSpringDamping,
+      settings.pointerSpringFrequency,
+      settings.pointerSpringDamping,
       deltaSeconds
     );
 
@@ -1308,8 +1194,8 @@
       "y",
       "velocityY",
       interactionTarget.y,
-      pointerSpringFrequency,
-      pointerSpringDamping,
+      settings.pointerSpringFrequency,
+      settings.pointerSpringDamping,
       deltaSeconds
     );
 
@@ -1318,8 +1204,8 @@
       "worldX",
       "velocityWorldX",
       interactionWorldTarget.worldX,
-      pointerSpringFrequency,
-      pointerSpringDamping,
+      settings.pointerSpringFrequency,
+      settings.pointerSpringDamping,
       deltaSeconds
     );
 
@@ -1328,8 +1214,8 @@
       "worldY",
       "velocityWorldY",
       interactionWorldTarget.worldY,
-      pointerSpringFrequency,
-      pointerSpringDamping,
+      settings.pointerSpringFrequency,
+      settings.pointerSpringDamping,
       deltaSeconds
     );
 
@@ -1338,8 +1224,8 @@
       "x",
       "velocityX",
       interactionTarget.x,
-      lightSpringFrequency,
-      lightSpringDamping,
+      settings.lightSpringFrequency,
+      settings.lightSpringDamping,
       deltaSeconds
     );
 
@@ -1348,19 +1234,17 @@
       "y",
       "velocityY",
       interactionTarget.y,
-      lightSpringFrequency,
-      lightSpringDamping,
+      settings.lightSpringFrequency,
+      settings.lightSpringDamping,
       deltaSeconds
     );
 
     const strengthResponse =
-      mobileQuery.matches
-        ? settings.mobileStrengthResponse
-        : !pointer.inside
-          ? settings.pointerStrengthExitResponse
-          : interactionTarget.strength < 0.95
-            ? settings.pointerStrengthReturnResponse
-            : settings.pointerStrengthInResponse;
+      !pointer.inside
+        ? settings.pointerStrengthExitResponse
+        : interactionTarget.strength < 0.95
+          ? settings.pointerStrengthReturnResponse
+          : settings.pointerStrengthInResponse;
 
     pointer.strength +=
       (
@@ -1387,11 +1271,7 @@
 
     drawScene(
       timestamp *
-      (
-        mobileQuery.matches
-          ? settings.mobileAmbientSpeed
-          : settings.ambientSpeed
-      )
+      settings.ambientSpeed
     );
   }
 
@@ -1410,10 +1290,6 @@
 
     if (shouldAnimate()) {
       previousFrameTime = 0;
-
-      if (mobileQuery.matches) {
-        mobileMotion.nextTargetTime = 0;
-      }
 
       frameRequest =
         window.requestAnimationFrame(

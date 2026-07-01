@@ -184,6 +184,7 @@ hr {
   margin: 0 auto 2rem auto;
   padding: 1rem 2rem;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   gap: clamp(1.25rem, 3vw, 3rem);
@@ -410,7 +411,7 @@ thead {
     grid-row: 3;
   }
 
-  .logo-bumo {
+  .logo-bump {
     grid-column: 5 / span 2;
     grid-row: 3;
   }
