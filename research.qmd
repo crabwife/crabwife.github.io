@@ -1,0 +1,48 @@
+---
+title: "Research"
+---
+
+## Scientific productivity as a stochastic process
+
+My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.
+
+This work focuses on:
+
+- self-exciting and history-dependent processes
+- extensive and intensive margins of productivity
+- rank persistence and rank mixing
+- heavy-tailed year-to-year changes
+- temporary inactivity, restart, and dropout
+- generative model comparison
+
+## Complex systems
+
+More broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity.
+
+## Current project
+
+My current project extends earlier random-walk models of scientific productivity by comparing autoregressive, hurdle, and self-exciting models against empirical career trajectories.
+
+The project evaluates whether parsimonious dynamic models can jointly reproduce:
+
+- mean and variance trajectories
+- productivity increments
+- cumulative productivity distributions
+- career-stage transitions
+- rank persistence
+- periods of inactivity and return
+
+## Methods
+
+My work uses tools from:
+
+- stochastic processes
+- time-series analysis
+- computational social science
+- statistical inference
+- simulation-based model evaluation
+- complex-systems science
+
+## Code
+
+Code and computational materials are available through my [GitHub profile](https://github.com/crabwife).

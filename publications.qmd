@@ -1,0 +1,31 @@
+---
+title: "Publications"
+---
+
+## Manuscripts
+
+### Stochastic dynamics can drive large differences in researcher productivity
+
+**Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset**
+
+Manuscript in preparation.
+
+This work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.
+
+## Preprints
+
+Preprints will be listed here as they become available.
+
+## Talks and presentations
+
+Talks and presentations will be linked here as they come available.
+
+## Posters
+
+Posters and conference materials will be added here.
+
+## Software and data
+
+Research code is available on [GitHub](https://github.com/crabwife).
+
+Replication materials and archived releases will be linked alongside the corresponding manuscripts.

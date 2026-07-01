@@ -1,0 +1,92 @@
+---
+title: "Curriculum Vitae"
+---
+
+## Samantha Magid
+
+Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling.
+
+[Download my CV as a PDF](cv.pdf)
+
+## Research Interests
+
+- Complex systems
+- Science of science
+- Estuarine and intertidal systems
+- Stochastic processes
+- Application of natural phenomena
+- Scientific productivity
+- Sequential neural networks
+- Generative modeling
+- Metaresearch
+- Coupled air-sea climate systems
+
+## Education
+
+### Master of Science in Complex Systems and Data Science
+
+**University of Vermont**  
+Vermont Complex Systems Institute  
+Expected Spring 2028
+
+- UVM Graduate Merit Scholar
+
+### Bachelor of Science in Data Science and Environmental Science
+
+**Boston University**  
+Faculty of Computing & Data Sciences
+
+- Lara Vincent Undergraduate Researcher
+
+## Research Experience
+
+### Research Assistant
+
+**Vermont Complex Systems Institute**  
+May 2026–present
+
+- Develop stochastic models of scientific-productivity trajectories.
+- Compare simulated and empirical career-level distributions.
+- Study history dependence, self-excitation, inactivity, and rank persistence.
+- Build reproducible research and analysis pipelines in Python.
+- Evaluate generative models using distributional, predictive, and trajectory-level diagnostics.
+
+### [Position Title]
+
+**Boston University Marine Program**  
+September 2022–January 2024
+
+- Placehold
+- Placehold
+- Placehold
+
+## Publications
+
+Publications and manuscripts are listed on the [Publications](publications.qmd) page.
+
+## Presentations
+
+Presentations, posters, and invited talks will be listed here.
+
+## Technical Skills
+
+**Programming:** Python, R, SQL, Rust
+
+**Scientific computing and machine learning:** pandas, NumPy, SciPy, scikit-learn, Matplotlib, TensorFlow, XGBoost
+
+**Research and visualization tools:** Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau
+
+**Methods:** Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization
+
+## Affiliations
+
+- Vermont Complex Systems Institute under [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
+- Boston University Faculty of Computing & Data Sciences under [Dr. Mayank Varia](https://www.mvaria.com/)
+- Boston University Spark! Program
+- Boston University Marine Program under [Dr. Robinson Fulweiler](https://www.fulweilerlab.com/)
+
+## Contact
+
+**Email:** [samantha.magid@uvm.edu](mailto:samantha.magid@uvm.edu)  
+**GitHub:** [crabwife](https://github.com/crabwife)
+**LinkedIn:** [Samantha Magid](https://www.linkedin.com/in/samantha-magid/)

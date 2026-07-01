@@ -1,0 +1,187 @@
+/* css styles */
+/* Full-width homepage */
+
+.quarto-container.page-columns {
+  max-width: 1400px;
+}
+
+
+/* Top section: approximately one-third of viewport height */
+
+.home-hero {
+  min-height: 34vh;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(320px, 1.2fr);
+  gap: 3rem;
+  align-items: center;
+  max-width: 1050px;
+  margin: 1.5rem auto 0 auto;
+  padding: 1rem 2rem;
+}
+
+
+/* Headshot */
+
+.home-photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headshot {
+  width: min(100%, 270px);
+  height: 31vh;
+  max-height: 360px;
+  min-height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+
+/* About and contact text on right */
+
+.home-info {
+  justify-self: end;
+  max-width: 500px;
+  text-align: right;
+}
+
+.home-info h1 {
+  margin: 0 0 0.6rem 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.home-info p {
+  margin-left: auto;
+  max-width: 470px;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.home-info a {
+  text-decoration: none;
+}
+
+.home-contact {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+
+/* Logo strip: approximately one-sixth of viewport height */
+
+.program-logos {
+  min-height: 16vh;
+  max-width: 1050px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.program-logos p {
+  display: contents;
+}
+
+.program-logos a {
+  width: 180px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.program-logo {
+  width: 160px;
+  height: 70px;
+  object-fit: contain;
+  object-position: center;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition:
+    filter 160ms ease,
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.program-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+
+/* Quote and lower sections */
+
+.homepage-quote {
+  max-width: 850px;
+  margin: 2rem auto 3rem auto;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-left: none;
+}
+
+.homepage-quote blockquote {
+  margin: 0 0 0.6rem 0;
+  padding: 0;
+  border-left: none;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .home-photo {
+    justify-content: center;
+  }
+
+  .headshot {
+    width: 230px;
+    height: 290px;
+    min-height: 0;
+  }
+
+  .home-info {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .home-info p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .program-logos {
+    min-height: auto;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .program-logos a {
+    width: 140px;
+    height: 75px;
+  }
+
+  .program-logo {
+    width: 130px;
+    height: 58px;
+  }
+}

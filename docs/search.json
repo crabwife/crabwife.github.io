@@ -1,0 +1,177 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling.\nDownload my CV as a PDF"
+  },
+  {
+    "objectID": "cv.html#samantha-magid",
+    "href": "cv.html#samantha-magid",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling.\nDownload my CV as a PDF"
+  },
+  {
+    "objectID": "cv.html#research-interests",
+    "href": "cv.html#research-interests",
+    "title": "Curriculum Vitae",
+    "section": "Research Interests",
+    "text": "Research Interests\n\nComplex systems\nScience of science\nEstuarine and intertidal systems\nStochastic processes\nApplication of natural phenomena\nScientific productivity\nSequential neural networks\nGenerative modeling\nMetaresearch\nCoupled air-sea climate systems"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\nMaster of Science in Complex Systems and Data Science\nUniversity of Vermont\nVermont Complex Systems Institute\nExpected Spring 2028\n\nUVM Graduate Merit Scholar\n\n\n\nBachelor of Science in Data Science and Environmental Science\nBoston University\nFaculty of Computing & Data Sciences\n\nLara Vincent Undergraduate Researcher"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": "Research Experience",
+    "text": "Research Experience\n\nResearch Assistant\nVermont Complex Systems Institute\nMay 2026–present\n\nDevelop stochastic models of scientific-productivity trajectories.\nCompare simulated and empirical career-level distributions.\nStudy history dependence, self-excitation, inactivity, and rank persistence.\nBuild reproducible research and analysis pipelines in Python.\nEvaluate generative models using distributional, predictive, and trajectory-level diagnostics.\n\n\n\n[Position Title]\nBoston University Marine Program\nSeptember 2022–January 2024\n\nPlacehold\nPlacehold\nPlacehold"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": "Publications",
+    "text": "Publications\nPublications and manuscripts are listed on the Publications page."
+  },
+  {
+    "objectID": "cv.html#presentations",
+    "href": "cv.html#presentations",
+    "title": "Curriculum Vitae",
+    "section": "Presentations",
+    "text": "Presentations\nPresentations, posters, and invited talks will be listed here."
+  },
+  {
+    "objectID": "cv.html#technical-skills",
+    "href": "cv.html#technical-skills",
+    "title": "Curriculum Vitae",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nProgramming: Python, R, SQL, Rust\nScientific computing and machine learning: pandas, NumPy, SciPy, scikit-learn, Matplotlib, TensorFlow, XGBoost\nResearch and visualization tools: Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau\nMethods: Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization"
+  },
+  {
+    "objectID": "cv.html#affiliations",
+    "href": "cv.html#affiliations",
+    "title": "Curriculum Vitae",
+    "section": "Affiliations",
+    "text": "Affiliations\n\nVermont Complex Systems Institute under Dr. Sam Zhang\nBoston University Faculty of Computing & Data Sciences under Dr. Mayank Varia\nBoston University Spark! Program\nBoston University Marine Program under Dr. Robinson Fulweiler"
+  },
+  {
+    "objectID": "cv.html#contact",
+    "href": "cv.html#contact",
+    "title": "Curriculum Vitae",
+    "section": "Contact",
+    "text": "Contact\nEmail: samantha.magid@uvm.edu\nGitHub: crabwife LinkedIn: Samantha Magid"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output."
+  },
+  {
+    "objectID": "publications.html#manuscripts",
+    "href": "publications.html#manuscripts",
+    "title": "Publications",
+    "section": "",
+    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output."
+  },
+  {
+    "objectID": "publications.html#preprints",
+    "href": "publications.html#preprints",
+    "title": "Publications",
+    "section": "Preprints",
+    "text": "Preprints\nPreprints will be listed here as they become available."
+  },
+  {
+    "objectID": "publications.html#talks-and-presentations",
+    "href": "publications.html#talks-and-presentations",
+    "title": "Publications",
+    "section": "Talks and presentations",
+    "text": "Talks and presentations\nTalks and presentations will be linked here as they come available."
+  },
+  {
+    "objectID": "publications.html#posters",
+    "href": "publications.html#posters",
+    "title": "Publications",
+    "section": "Posters",
+    "text": "Posters\nPosters and conference materials will be added here."
+  },
+  {
+    "objectID": "publications.html#software-and-data",
+    "href": "publications.html#software-and-data",
+    "title": "Publications",
+    "section": "Software and data",
+    "text": "Software and data\nResearch code is available on GitHub.\nReplication materials and archived releases will be linked alongside the corresponding manuscripts."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
+  },
+  {
+    "objectID": "research.html#scientific-productivity-as-a-stochastic-process",
+    "href": "research.html#scientific-productivity-as-a-stochastic-process",
+    "title": "Research",
+    "section": "",
+    "text": "My current research examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
+  },
+  {
+    "objectID": "research.html#complex-systems",
+    "href": "research.html#complex-systems",
+    "title": "Research",
+    "section": "Complex systems",
+    "text": "Complex systems\nMore broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity."
+  },
+  {
+    "objectID": "research.html#current-project",
+    "href": "research.html#current-project",
+    "title": "Research",
+    "section": "Current project",
+    "text": "Current project\nMy current project extends earlier random-walk models of scientific productivity by comparing autoregressive, hurdle, and self-exciting models against empirical career trajectories.\nThe project evaluates whether parsimonious dynamic models can jointly reproduce:\n\nmean and variance trajectories\nproductivity increments\ncumulative productivity distributions\ncareer-stage transitions\nrank persistence\nperiods of inactivity and return"
+  },
+  {
+    "objectID": "research.html#methods",
+    "href": "research.html#methods",
+    "title": "Research",
+    "section": "Methods",
+    "text": "Methods\nMy work uses tools from:\n\nstochastic processes\ntime-series analysis\ncomputational social science\nstatistical inference\nsimulation-based model evaluation\ncomplex-systems science"
+  },
+  {
+    "objectID": "research.html#code",
+    "href": "research.html#code",
+    "title": "Research",
+    "section": "Code",
+    "text": "Code\nCode and computational materials are available through my GitHub profile."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Samantha Magid",
+    "section": "",
+    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Unapologetic gay woman in STEM.\nResearch · Publications · CV\n\nsamantha.magid@uvm.edu\nGithub | Poems and other writings"
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Samantha Magid",
+    "section": "Current Research",
+    "text": "Current Research\nMy current work asks whether persistent differences in scientific productivity can emerge from parsimonious, history-dependent stochastic processes without requiring stable inherent differences among scholars. The work seeks to debunk the eugenecist, racist suggestions of William Shockley, the white, male Nobel laureate who felt science was too egalitarian for its rewards to be anything but representative of individual merit. Shockley suggested that scientific productivity was the probabilistic result of inherent, immutable, individual traits. As we develop a follow-up to Scientific Productivity as a Random Walk, we scientifically validate a long-overdue departure from Shockley’s bad science.\nRead more about my research →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
