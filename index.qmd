@@ -31,7 +31,7 @@ Applied and computational mathematician studying scientific productivity, stocha
 
 ::: {.program-logos}
 
-[![](images/scihumlab.png){.program-logo alt="Science and Humanity Lab"}](https://scienceandhumanitylab.github.io/){.logo-shl}
+[![](images/SHL.png){.program-logo alt="Science and Humanity Lab"}](https://scienceandhumanitylab.github.io/){.logo-shl}
 
 [![](images/VCSI.png){.program-logo alt="Vermont Complex Systems Institute"}](https://vermontcomplexsystems.org/){.logo-vcsi}
 
