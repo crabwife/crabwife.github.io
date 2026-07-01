@@ -43,18 +43,27 @@ Faculty of Computing & Data Sciences
 ### Research Assistant
 
 **Science and Humanities Lab** | _Vermont Complex Systems Institute_ 
-May 2026–present
+<span class="cv-date">May 2026–present</span>
 
-- Develop stochastic models of scientific-productivity trajectories.
-- Compare simulated and empirical career-level distributions.
-- Study history dependence, self-excitation, inactivity, and rank persistence.
-- Build reproducible research and analysis pipelines in Python.
-- Evaluate generative models using distributional, predictive, and trajectory-level diagnostics.
+- Develop models of scientific productivity, including autoregressive, hurdle, self-exciting, and history-dependent processes.
+- Fit and simulate generative models using longitudinal publication data.
+- Compare simulated and empirical patterns in productivity, inactivity, cumulative output, rank persistence, career-stage variation, and year-to-year fluctuations.
+- Investigate whether temporary opportunity structures, recent productivity, and prior inactivity can explain persistent differences in scientific output without invoking fixed individual traits.
+- Design statistical tests for history dependence, Markov-order violations, self-excitation, dropout, restart behavior, and long-range trajectory persistence.
+- Evaluate models using distributional, predictive, and trajectory-level diagnostics, including cross-validation, bootstrap confidence intervals, rank-mixing analyses, goodness-of-fit tests, and held-out simulations.
+- Produce publication-ready figures, technical summaries, and research materials for an ongoing study of scientific productivity as a complex stochastic process.
 
-### Principal Undergraduate Investigator
+### Undergraduate Principal Investigator
 
-**Boston University Marine Program**  
-September 2022–January 2023
+***Uca spp.*** **Bioturbation Survey** | _Boston University Marine Program_  
+<span class="cv-date">September 2022–January 2023</span>
+
+- Proposed and led an independent study of fiddler-crab overpopulation as a complex biophysical system.
+- Investigated how stochastic bioturbation feedback cycles contribute to salt-marsh erosion.
+- Designed and fabricated a custom tidal-forcing generator for controlled simulation of periodic intertidal conditions.
+- Developed an experimental system for studying feedback-driven marsh dynamics without disrupting field sites.
+- Coordinated with marine scientists and field experts as one of the program’s youngest principal investigators.
+- Completed the project’s first phase and produced reusable tools for future estuarine-modeling research
 
 ## Publications
 

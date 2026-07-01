@@ -114,6 +114,11 @@ hr {
   padding: 1rem 2rem;
 }
 
+.cv-date {
+  display: block;
+  margin-top: 0.3rem;
+}
+
 
 /* Headshot */
 
