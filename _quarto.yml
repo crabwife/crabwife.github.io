@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - favicon.ico
+    - favicon-delta.ico
     - loss-surface-between-banners.js
 
 format:
@@ -15,7 +15,7 @@ format:
 website:
   title: "Samantha Magid"
   site-url: "https://magid.systems"
-  favicon: favicon.ico
+  favicon: favicon-delta.ico
   navbar:
     left:
       - href: index.qmd
