@@ -357,9 +357,9 @@ thead {
   }
 
   /* Pool-ball arrangement:
-          VCSI
-       UVM    CDS
-     BU EE  BUMP  SPARK
+          SHL
+       UVM    VCSI
+     BU EE CDS  BUMP 
   */
 
   .program-logos {
@@ -385,7 +385,7 @@ thead {
     height: 52px;
   }
 
-  .logo-vcsi {
+  .logo-shl {
     grid-column: 3 / span 2;
     grid-row: 1;
   }
@@ -395,7 +395,7 @@ thead {
     grid-row: 2;
   }
 
-  .logo-cds {
+  .logo-vcsi {
     grid-column: 4 / span 2;
     grid-row: 2;
   }
@@ -405,12 +405,12 @@ thead {
     grid-row: 3;
   }
 
-  .logo-bump {
+  .logo-cds {
     grid-column: 3 / span 2;
     grid-row: 3;
   }
 
-  .logo-spark {
+  .logo-bumo {
     grid-column: 5 / span 2;
     grid-row: 3;
   }
