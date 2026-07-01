@@ -1,11 +1,21 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - favicon.ico
+    - loss-surface-between-banners.js
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    include-after-body: background.html
 
 website:
   title: "Samantha Magid"
   site-url: "https://magid.systems"
-
+  favicon: favicon.ico
   navbar:
     left:
       - href: index.qmd
@@ -26,9 +36,3 @@ website:
     left: "© 2026 Samantha Magid"
     center: "[Vermont Complex Systems Institute](https://vermontcomplexsystems.org/)"
     right: "[Email](mailto:samantha.magid@uvm.edu) · [ORCID](https://orcid.org/0009-0004-0358-4870) · [GitHub](https://github.com/crabwife) · [CV](cv.html) · [Writing](https://sefermiriam.substack.com/)"
-
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
