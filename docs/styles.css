@@ -97,7 +97,9 @@ hr {
 /* Full-width homepage */
 
 .quarto-container.page-columns {
+  width: 100%;
   max-width: 1400px;
+  margin-inline: auto;
 }
 
 
