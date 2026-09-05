@@ -16,7 +16,7 @@ This work develops and evaluates scholar-agnostic generative models of scientifi
 
 Paper in progress.
 
-This paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. Through simulation and empirical comparison, the paper asks which combinations of delay, attrition, and history dependence can account for the shape of scientific careers—and documents when an appealing mechanism cannot.
+This paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms.
 
 ## Preprints
 
