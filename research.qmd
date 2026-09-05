@@ -19,9 +19,11 @@ This work focuses on:
 
 More broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity.
 
-## Current project
+## Research in progress
 
-My current project extends earlier random-walk models of scientific productivity by comparing autoregressive, hurdle, and self-exciting models against empirical career trajectories.
+### Iterative development of SE-Hurdle-S
+
+SE-Hurdle-S did not begin as a finished model. It has emerged through repeated cycles of building a deliberately simple stochastic process, simulating entire careers, identifying where it fails, and adding only the mechanism needed to repair that failure. Starting from random-walk and autoregressive baselines, we introduced a hurdle for publication versus inactivity, career-stage structure, and an exponentially weighted memory of prior output. Each iteration is tested against the full empirical shape of scientific careers—not just a single goodness-of-fit score—including rank persistence and mixing, heavy-tailed changes, inequality, dropout, and restart. The goal is a model whose mechanisms remain interpretable even when the trajectories they generate are complicated.
 
 The project evaluates whether parsimonious dynamic models can jointly reproduce:
 

@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-## Manuscripts
+## Publications in progress
 
 ### Stochastic dynamics can drive large differences in researcher productivity
 
@@ -11,6 +11,12 @@ title: "Publications"
 Manuscript in preparation.
 
 This work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.
+
+### The Productivity Garden
+
+Paper in progress.
+
+This paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. Through simulation and empirical comparison, the paper asks which combinations of delay, attrition, and history dependence can account for the shape of scientific careers—and documents when an appealing mechanism cannot.
 
 ## Preprints
 

@@ -137,7 +137,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#scientific-productivity-as-a-stochastic-process" id="toc-scientific-productivity-as-a-stochastic-process" class="nav-link active" data-scroll-target="#scientific-productivity-as-a-stochastic-process">Scientific productivity as a stochastic process</a></li>
   <li><a href="#complex-systems" id="toc-complex-systems" class="nav-link" data-scroll-target="#complex-systems">Complex systems</a></li>
-  <li><a href="#current-project" id="toc-current-project" class="nav-link" data-scroll-target="#current-project">Current project</a></li>
+  <li><a href="#research-in-progress" id="toc-research-in-progress" class="nav-link" data-scroll-target="#research-in-progress">Research in progress</a>
+  <ul class="collapse">
+  <li><a href="#iterative-development-of-se-hurdle-s" id="toc-iterative-development-of-se-hurdle-s" class="nav-link" data-scroll-target="#iterative-development-of-se-hurdle-s">Iterative development of SE-Hurdle-S</a></li>
+  </ul></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   </ul>
@@ -182,9 +185,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="complex-systems">Complex systems</h2>
 <p>More broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity.</p>
 </section>
-<section id="current-project" class="level2">
-<h2 class="anchored" data-anchor-id="current-project">Current project</h2>
-<p>My current project extends earlier random-walk models of scientific productivity by comparing autoregressive, hurdle, and self-exciting models against empirical career trajectories.</p>
+<section id="research-in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="research-in-progress">Research in progress</h2>
+<section id="iterative-development-of-se-hurdle-s" class="level3">
+<h3 class="anchored" data-anchor-id="iterative-development-of-se-hurdle-s">Iterative development of SE-Hurdle-S</h3>
+<p>SE-Hurdle-S did not begin as a finished model. It has emerged through repeated cycles of building a deliberately simple stochastic process, simulating entire careers, identifying where it fails, and adding only the mechanism needed to repair that failure. Starting from random-walk and autoregressive baselines, we introduced a hurdle for publication versus inactivity, career-stage structure, and an exponentially weighted memory of prior output. Each iteration is tested against the full empirical shape of scientific careers—not just a single goodness-of-fit score—including rank persistence and mixing, heavy-tailed changes, inequality, dropout, and restart. The goal is a model whose mechanisms remain interpretable even when the trajectories they generate are complicated.</p>
 <p>The project evaluates whether parsimonious dynamic models can jointly reproduce:</p>
 <ul>
 <li>mean and variance trajectories</li>
@@ -194,6 +199,7 @@ ul.task-list li input[type="checkbox"] {
 <li>rank persistence</li>
 <li>periods of inactivity and return</li>
 </ul>
+</section>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>

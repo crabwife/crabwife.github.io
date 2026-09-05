@@ -15,7 +15,7 @@ page-layout: full
 
 # Samantha Magid
 
-Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Researcher at the Science and Humanity Lab. Unapologetic gay woman in STEM.
+Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. [Researcher](https://vermontcomplexsystems.org/research/group/science-and-humanity-lab/) at the Science and Humanity Lab. Unapologetic gay woman in STEM.
 
 [Research](research.qmd) · [Publications](publications.qmd) · [CV](cv.qmd)
 
