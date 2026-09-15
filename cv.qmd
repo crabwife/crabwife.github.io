@@ -31,18 +31,19 @@ Expected Spring 2028
 
 - UVM Graduate Merit Scholar
 
-### Bachelor of Science in Data Science and Environmental Science
+### Bachelor of Science in Data Science
 
 **Boston University**  
 Faculty of Computing & Data Sciences
 
+- Minor in Environmental Science
 - Lara Vincent Undergraduate Researcher
 
 ## Research Experience
 
 ### Research Assistant
 
-**Science and Humanities Lab** | _Vermont Complex Systems Institute_ 
+**Science and Humanity Lab** | _Vermont Complex Systems Institute_
 <span class="cv-date">May 2026–present</span>
 
 - Develop models of scientific productivity, including autoregressive, hurdle, self-exciting, and history-dependent processes.
@@ -94,4 +95,3 @@ Presentations, posters, and invited talks will be listed here.
 
 **Email:** [samantha.magid@uvm.edu](mailto:samantha.magid@uvm.edu)  
 **GitHub:** [crabwife](https://github.com/crabwife)     
-**LinkedIn:** [Samantha Magid](https://www.linkedin.com/in/samantha-magid/)     
