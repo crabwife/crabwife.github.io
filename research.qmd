@@ -2,49 +2,121 @@
 title: "Research"
 ---
 
-## Scientific productivity as a stochastic process
+## Scientific productivity as a partially observed stochastic process
 
-My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.
+My current work in the [Science and Humanity Lab](https://vermontcomplexsystems.org/research/group/science-and-humanity-lab/) asks a deliberately narrow question: **what temporal structure is required to explain scientific-productivity trajectories without treating persistent differences among scholars as fixed differences in inherent ability?**
 
-This work focuses on:
+Annual publications are observable. The process that generates them is not. Projects begin, compete for limited attention, develop over uncertain intervals, sometimes die, and sometimes arrive together. I therefore study publication counts as sparse observations of a history-dependent stochastic production system.
 
-- self-exciting and history-dependent processes
-- extensive and intensive margins of productivity
-- rank persistence and rank mixing
-- heavy-tailed year-to-year changes
-- temporary inactivity, restart, and dropout
-- generative model comparison
+This work extends [*Scientific Productivity as a Random Walk*](https://arxiv.org/abs/2309.04414). The random-walk account establishes that highly variable individual careers can generate a smooth aggregate trajectory. My follow-up asks whether current annual productivity is itself a sufficient state from which to generate the future.
 
-## Complex systems
+In the data examined so far, it is not.
 
-More broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity.
+## Two empirical settings
 
-## Research in progress
+The project uses two complementary longitudinal sources:
 
-### Iterative development of SE-Hurdle-S
+- **DBLP computer science:** a 21-year baseline for reproducing and extending the original random-walk analysis.
+- **AARC:** more than 92,000 careers and 250,000 observed scientist-years, analyzed across 113 fields and seven broader domains over as many as 13 career years.
 
-SE-Hurdle-S did not begin as a finished model. It has emerged through repeated cycles of building a deliberately simple stochastic process, simulating entire careers, identifying where it fails, and adding only the mechanism needed to repair that failure. Starting from random-walk and autoregressive baselines, we introduced a hurdle for publication versus inactivity, career-stage structure, and an exponentially weighted memory of prior output. Each iteration is tested against the full empirical shape of scientific careers—not just a single goodness-of-fit score—including rank persistence and mixing, heavy-tailed changes, inequality, dropout, and restart. The goal is a model whose mechanisms remain interpretable even when the trajectories they generate are complicated.
+The shorter AARC horizon limits long-lag inference, but its disciplinary breadth makes it possible to ask whether memory patterns found in computer science recur across very different research environments. The AARC and DBLP pipelines use matched lag definitions and model classes so that apparent differences are not artifacts of incompatible specifications.
 
-The project evaluates whether parsimonious dynamic models can jointly reproduce:
+## What the trajectories show
 
-- mean and variance trajectories
-- productivity increments
-- cumulative productivity distributions
-- career-stage transitions
-- rank persistence
-- periods of inactivity and return
+### Productivity has two margins
+
+A zero-publication year and a low positive-publication year are not the same event. I separate:
+
+1. the **extensive margin**, whether a scholar publishes at all; and
+2. the **intensive margin**, how much a scholar publishes conditional on publishing.
+
+This distinction changes the career-age story. The probability of remaining active falls sharply, while average output among active scholars eventually rises. A decline in unconditional mean productivity can therefore conceal two opposing processes: fewer scholars publishing, but greater output among those who do.
+
+### Several forms of persistence decay approximately geometrically
+
+Across activity, positive output, rank, hot states, and recurrence, dependence on the past weakens smoothly with lag. A useful descriptive approximation is
+
+$$
+\operatorname{Stat}(t,\ell) \approx A\phi^{\ell}, \qquad 0<\phi<1.
+$$
+
+Selected AARC summaries are:
+
+| Persistence measure | Fitted decay $\phi$ | Descriptive $R^2$ |
+|---|---:|---:|
+| Activity / extensive margin | 0.436 | 0.989 |
+| Positive output / intensive margin | 0.690 | 0.975 |
+| Entry-rank persistence | 0.812 | 0.995 |
+| Active-endpoint rank persistence | 0.968 | 0.997 |
+| Activity mutual information | 0.734 | 0.997 |
+| State recurrence | 0.767 | 0.994 |
+
+These decay parameters belong to different statistics and should not be read as a single common effect size. The $R^2$ values summarize curve shape in-sample, not predictive performance. Geometric decay is the dominant first-order pattern, but stretched exponentials and other alternatives remain part of the model comparison.
+
+### Inactivity has duration dependence
+
+Re-entry becomes substantially less likely as an inactive run lengthens. In the current AARC analysis, each additional inactive year reduces the odds of return by about 52% ($\hat\gamma=-0.735$); after roughly two consecutive inactive years, the state begins to resemble an absorbing one. This is stronger structure than a model with a single, memoryless restart probability can express.
+
+## Reduced models: remembering without scholar-specific traits
+
+The DBLP follow-up compares random walks, autoregressions, hurdle models, and self-exciting models against the same trajectory-level diagnostics. The central result is not that stochastic explanation fails. It is that a first-order state representation is too small.
+
+In DBLP, the empirical two-step Chapman--Kolmogorov discrepancy is about 0.128, compared with a first-order Markov-null 95% upper bound near 0.062. Adding productivity history improves held-out predictions across one-, two-, and five-year horizons. A stagewise first-order hurdle model nearly erases terminal rank persistence; the history-dependent model recovers it.
+
+### SE-Hurdle-S
+
+**SE-Hurdle-S** is a scholar-agnostic self-exciting hurdle model. It keeps the immediately preceding year explicit and compresses the earlier trajectory into an exponentially weighted history:
+
+$$
+H_t=
+\frac{\sum_{k=0}^{t-2}\rho^{\,t-2-k}\log(1+q_k)}
+{\sum_{k=0}^{t-2}\rho^{\,t-2-k}}.
+$$
+
+Separate equations model activity and positive output. Parameters are shared across scholars within a career stage; the model does not assign each scholar a fixed latent quality. In the current DBLP fit, cross-validation selects $\hat\rho=0.6664$, corresponding to a memory half-life of about 1.71 years.
+
+The larger AARC analysis removes the geometric constraint first. An unrestricted split-margin AR(6,6) estimates each lag independently across 113 fields and seven domains, then tests whether those free coefficients recover a geometric shape and whether the compressed model retains held-out performance. This makes geometric memory a hypothesis to test, not a pattern imposed by construction.
+
+## The Productivity Garden
+
+The reduced models show that history matters, but they do not explain what is being remembered. **The Productivity Garden** is a candidate mechanism: a latent stochastic project-pipeline model in which unfinished projects form a hidden inventory and publications are observable completions.
+
+In the bare model, new projects $N_{t+1}$ enter a latent stock $G_t$. Each unresolved project is harvested with probability $h$, abandoned with probability $d$, or remains in progress:
+
+$$
+G_{t+1}=(1-h-d)G_t+N_{t+1},
+\qquad
+\mathbb{E}[q_{t+1}\mid G_t]=hG_t.
+$$
+
+A project planted $\ell$ years ago then contributes in expectation with weight proportional to $(1-h-d)^\ell$. Geometric memory appears as the observable trace of geometric survival in the hidden pipeline.
+
+This bare model is a null, not a finished explanation. Current work tests which additional mechanisms are needed to transmit latent pipeline memory into real publication trajectories: repeated project yields, persistent planting, shared harvest shocks, congestion from finite effort, abandonment, and scholar or field heterogeneity. The aim is a falsifiable family of models whose extensions make distinguishable empirical predictions.
+
+The broader mathematical problem is not limited to science: when can a high-dimensional, partially observed production system be represented by a low-dimensional fading-memory state?
+
+## Current outputs
+
+### Manuscript in preparation
+
+**Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, and Aaron Clauset.**<br>
+*Stochastic dynamics can drive large differences in researcher productivity.*
+
+An earlier version of the project was presented by Sam Zhang at the 5th International Conference on the Science of Science and Innovation (ICSSI 2026). See the [Publications page](publications.qmd) for current status.
+
+### Reproducible research code
+
+- [SPAARW follow-up](https://github.com/crabwife/spaarw_followup): random-walk reproduction, model lineage, Chapman--Kolmogorov tests, history-prediction comparisons, SE-Hurdle-S, simulation, and trajectory diagnostics.
+- [AARC--DBLP comparison](https://github.com/crabwife/AARC-DBLP-comparison): matched 13-year cross-source replication and selection-sensitivity analysis.
+- [Seven productivity models](https://github.com/crabwife/seven_models_shockley): comparative generative-model development and diagnostics.
+- [GitHub profile](https://github.com/crabwife): additional public code, figures, and computational materials.
+
+Restricted AARC data remain on approved UVM systems; public materials contain code and derived results rather than privileged individual-level records.
+
+## Interpretation boundary
+
+The current evidence supports a fading-memory description of scientific productivity. It does not identify a unique causal mechanism, prove that every persistence statistic is exactly geometric, or rule out stable heterogeneity. The purpose of the model sequence is to distinguish those explanations: first establish which observable regularities recur, then determine the smallest latent process capable of producing them jointly.
 
 ## Methods
 
-My work uses tools from:
-
-- stochastic processes
-- time-series analysis
-- computational social science
-- statistical inference
-- simulation-based model evaluation
-- complex-systems science
-
-## Code
-
-Code and computational materials are available through my [GitHub profile](https://github.com/crabwife).
+My work draws on stochastic processes, discrete-time count models, survival and hazard models, autoregressive and state-space representations, bootstrap inference, held-out simulation, model comparison, time-series analysis, computational social science, and complex-systems science.

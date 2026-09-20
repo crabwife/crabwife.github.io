@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -135,14 +164,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#scientific-productivity-as-a-stochastic-process" id="toc-scientific-productivity-as-a-stochastic-process" class="nav-link active" data-scroll-target="#scientific-productivity-as-a-stochastic-process">Scientific productivity as a stochastic process</a></li>
-  <li><a href="#complex-systems" id="toc-complex-systems" class="nav-link" data-scroll-target="#complex-systems">Complex systems</a></li>
-  <li><a href="#research-in-progress" id="toc-research-in-progress" class="nav-link" data-scroll-target="#research-in-progress">Research in progress</a>
+  <li><a href="#scientific-productivity-as-a-partially-observed-stochastic-process" id="toc-scientific-productivity-as-a-partially-observed-stochastic-process" class="nav-link active" data-scroll-target="#scientific-productivity-as-a-partially-observed-stochastic-process">Scientific productivity as a partially observed stochastic process</a></li>
+  <li><a href="#two-empirical-settings" id="toc-two-empirical-settings" class="nav-link" data-scroll-target="#two-empirical-settings">Two empirical settings</a></li>
+  <li><a href="#what-the-trajectories-show" id="toc-what-the-trajectories-show" class="nav-link" data-scroll-target="#what-the-trajectories-show">What the trajectories show</a>
   <ul class="collapse">
-  <li><a href="#iterative-development-of-se-hurdle-s" id="toc-iterative-development-of-se-hurdle-s" class="nav-link" data-scroll-target="#iterative-development-of-se-hurdle-s">Iterative development of SE-Hurdle-S</a></li>
+  <li><a href="#productivity-has-two-margins" id="toc-productivity-has-two-margins" class="nav-link" data-scroll-target="#productivity-has-two-margins">Productivity has two margins</a></li>
+  <li><a href="#several-forms-of-persistence-decay-approximately-geometrically" id="toc-several-forms-of-persistence-decay-approximately-geometrically" class="nav-link" data-scroll-target="#several-forms-of-persistence-decay-approximately-geometrically">Several forms of persistence decay approximately geometrically</a></li>
+  <li><a href="#inactivity-has-duration-dependence" id="toc-inactivity-has-duration-dependence" class="nav-link" data-scroll-target="#inactivity-has-duration-dependence">Inactivity has duration dependence</a></li>
   </ul></li>
+  <li><a href="#reduced-models-remembering-without-scholar-specific-traits" id="toc-reduced-models-remembering-without-scholar-specific-traits" class="nav-link" data-scroll-target="#reduced-models-remembering-without-scholar-specific-traits">Reduced models: remembering without scholar-specific traits</a>
+  <ul class="collapse">
+  <li><a href="#se-hurdle-s" id="toc-se-hurdle-s" class="nav-link" data-scroll-target="#se-hurdle-s">SE-Hurdle-S</a></li>
+  </ul></li>
+  <li><a href="#the-productivity-garden" id="toc-the-productivity-garden" class="nav-link" data-scroll-target="#the-productivity-garden">The Productivity Garden</a></li>
+  <li><a href="#current-outputs" id="toc-current-outputs" class="nav-link" data-scroll-target="#current-outputs">Current outputs</a>
+  <ul class="collapse">
+  <li><a href="#manuscript-in-preparation" id="toc-manuscript-in-preparation" class="nav-link" data-scroll-target="#manuscript-in-preparation">Manuscript in preparation</a></li>
+  <li><a href="#reproducible-research-code" id="toc-reproducible-research-code" class="nav-link" data-scroll-target="#reproducible-research-code">Reproducible research code</a></li>
+  </ul></li>
+  <li><a href="#interpretation-boundary" id="toc-interpretation-boundary" class="nav-link" data-scroll-target="#interpretation-boundary">Interpretation boundary</a></li>
   <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   </ul>
 </nav>
     </div>
@@ -168,54 +209,142 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="scientific-productivity-as-a-stochastic-process" class="level2">
-<h2 class="anchored" data-anchor-id="scientific-productivity-as-a-stochastic-process">Scientific productivity as a stochastic process</h2>
-<p>My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.</p>
-<p>This work focuses on:</p>
+<section id="scientific-productivity-as-a-partially-observed-stochastic-process" class="level2">
+<h2 class="anchored" data-anchor-id="scientific-productivity-as-a-partially-observed-stochastic-process">Scientific productivity as a partially observed stochastic process</h2>
+<p>My current work in the <a href="https://vermontcomplexsystems.org/research/group/science-and-humanity-lab/">Science and Humanity Lab</a> asks a deliberately narrow question: <strong>what temporal structure is required to explain scientific-productivity trajectories without treating persistent differences among scholars as fixed differences in inherent ability?</strong></p>
+<p>Annual publications are observable. The process that generates them is not. Projects begin, compete for limited attention, develop over uncertain intervals, sometimes die, and sometimes arrive together. I therefore study publication counts as sparse observations of a history-dependent stochastic production system.</p>
+<p>This work extends <a href="https://arxiv.org/abs/2309.04414"><em>Scientific Productivity as a Random Walk</em></a>. The random-walk account establishes that highly variable individual careers can generate a smooth aggregate trajectory. My follow-up asks whether current annual productivity is itself a sufficient state from which to generate the future.</p>
+<p>In the data examined so far, it is not.</p>
+</section>
+<section id="two-empirical-settings" class="level2">
+<h2 class="anchored" data-anchor-id="two-empirical-settings">Two empirical settings</h2>
+<p>The project uses two complementary longitudinal sources:</p>
 <ul>
-<li>self-exciting and history-dependent processes</li>
-<li>extensive and intensive margins of productivity</li>
-<li>rank persistence and rank mixing</li>
-<li>heavy-tailed year-to-year changes</li>
-<li>temporary inactivity, restart, and dropout</li>
-<li>generative model comparison</li>
+<li><strong>DBLP computer science:</strong> a 21-year baseline for reproducing and extending the original random-walk analysis.</li>
+<li><strong>AARC:</strong> more than 92,000 careers and 250,000 observed scientist-years, analyzed across 113 fields and seven broader domains over as many as 13 career years.</li>
 </ul>
+<p>The shorter AARC horizon limits long-lag inference, but its disciplinary breadth makes it possible to ask whether memory patterns found in computer science recur across very different research environments. The AARC and DBLP pipelines use matched lag definitions and model classes so that apparent differences are not artifacts of incompatible specifications.</p>
 </section>
-<section id="complex-systems" class="level2">
-<h2 class="anchored" data-anchor-id="complex-systems">Complex systems</h2>
-<p>More broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity.</p>
+<section id="what-the-trajectories-show" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-trajectories-show">What the trajectories show</h2>
+<section id="productivity-has-two-margins" class="level3">
+<h3 class="anchored" data-anchor-id="productivity-has-two-margins">Productivity has two margins</h3>
+<p>A zero-publication year and a low positive-publication year are not the same event. I separate:</p>
+<ol type="1">
+<li>the <strong>extensive margin</strong>, whether a scholar publishes at all; and</li>
+<li>the <strong>intensive margin</strong>, how much a scholar publishes conditional on publishing.</li>
+</ol>
+<p>This distinction changes the career-age story. The probability of remaining active falls sharply, while average output among active scholars eventually rises. A decline in unconditional mean productivity can therefore conceal two opposing processes: fewer scholars publishing, but greater output among those who do.</p>
 </section>
-<section id="research-in-progress" class="level2">
-<h2 class="anchored" data-anchor-id="research-in-progress">Research in progress</h2>
-<section id="iterative-development-of-se-hurdle-s" class="level3">
-<h3 class="anchored" data-anchor-id="iterative-development-of-se-hurdle-s">Iterative development of SE-Hurdle-S</h3>
-<p>SE-Hurdle-S did not begin as a finished model. It has emerged through repeated cycles of building a deliberately simple stochastic process, simulating entire careers, identifying where it fails, and adding only the mechanism needed to repair that failure. Starting from random-walk and autoregressive baselines, we introduced a hurdle for publication versus inactivity, career-stage structure, and an exponentially weighted memory of prior output. Each iteration is tested against the full empirical shape of scientific careers—not just a single goodness-of-fit score—including rank persistence and mixing, heavy-tailed changes, inequality, dropout, and restart. The goal is a model whose mechanisms remain interpretable even when the trajectories they generate are complicated.</p>
-<p>The project evaluates whether parsimonious dynamic models can jointly reproduce:</p>
+<section id="several-forms-of-persistence-decay-approximately-geometrically" class="level3">
+<h3 class="anchored" data-anchor-id="several-forms-of-persistence-decay-approximately-geometrically">Several forms of persistence decay approximately geometrically</h3>
+<p>Across activity, positive output, rank, hot states, and recurrence, dependence on the past weakens smoothly with lag. A useful descriptive approximation is</p>
+<p><span class="math display">\[
+\operatorname{Stat}(t,\ell) \approx A\phi^{\ell}, \qquad 0&lt;\phi&lt;1.
+\]</span></p>
+<p>Selected AARC summaries are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Persistence measure</th>
+<th style="text-align: right;">Fitted decay <span class="math inline">\(\phi\)</span></th>
+<th style="text-align: right;">Descriptive <span class="math inline">\(R^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Activity / extensive margin</td>
+<td style="text-align: right;">0.436</td>
+<td style="text-align: right;">0.989</td>
+</tr>
+<tr class="even">
+<td>Positive output / intensive margin</td>
+<td style="text-align: right;">0.690</td>
+<td style="text-align: right;">0.975</td>
+</tr>
+<tr class="odd">
+<td>Entry-rank persistence</td>
+<td style="text-align: right;">0.812</td>
+<td style="text-align: right;">0.995</td>
+</tr>
+<tr class="even">
+<td>Active-endpoint rank persistence</td>
+<td style="text-align: right;">0.968</td>
+<td style="text-align: right;">0.997</td>
+</tr>
+<tr class="odd">
+<td>Activity mutual information</td>
+<td style="text-align: right;">0.734</td>
+<td style="text-align: right;">0.997</td>
+</tr>
+<tr class="even">
+<td>State recurrence</td>
+<td style="text-align: right;">0.767</td>
+<td style="text-align: right;">0.994</td>
+</tr>
+</tbody>
+</table>
+<p>These decay parameters belong to different statistics and should not be read as a single common effect size. The <span class="math inline">\(R^2\)</span> values summarize curve shape in-sample, not predictive performance. Geometric decay is the dominant first-order pattern, but stretched exponentials and other alternatives remain part of the model comparison.</p>
+</section>
+<section id="inactivity-has-duration-dependence" class="level3">
+<h3 class="anchored" data-anchor-id="inactivity-has-duration-dependence">Inactivity has duration dependence</h3>
+<p>Re-entry becomes substantially less likely as an inactive run lengthens. In the current AARC analysis, each additional inactive year reduces the odds of return by about 52% (<span class="math inline">\(\hat\gamma=-0.735\)</span>); after roughly two consecutive inactive years, the state begins to resemble an absorbing one. This is stronger structure than a model with a single, memoryless restart probability can express.</p>
+</section>
+</section>
+<section id="reduced-models-remembering-without-scholar-specific-traits" class="level2">
+<h2 class="anchored" data-anchor-id="reduced-models-remembering-without-scholar-specific-traits">Reduced models: remembering without scholar-specific traits</h2>
+<p>The DBLP follow-up compares random walks, autoregressions, hurdle models, and self-exciting models against the same trajectory-level diagnostics. The central result is not that stochastic explanation fails. It is that a first-order state representation is too small.</p>
+<p>In DBLP, the empirical two-step Chapman–Kolmogorov discrepancy is about 0.128, compared with a first-order Markov-null 95% upper bound near 0.062. Adding productivity history improves held-out predictions across one-, two-, and five-year horizons. A stagewise first-order hurdle model nearly erases terminal rank persistence; the history-dependent model recovers it.</p>
+<section id="se-hurdle-s" class="level3">
+<h3 class="anchored" data-anchor-id="se-hurdle-s">SE-Hurdle-S</h3>
+<p><strong>SE-Hurdle-S</strong> is a scholar-agnostic self-exciting hurdle model. It keeps the immediately preceding year explicit and compresses the earlier trajectory into an exponentially weighted history:</p>
+<p><span class="math display">\[
+H_t=
+\frac{\sum_{k=0}^{t-2}\rho^{\,t-2-k}\log(1+q_k)}
+{\sum_{k=0}^{t-2}\rho^{\,t-2-k}}.
+\]</span></p>
+<p>Separate equations model activity and positive output. Parameters are shared across scholars within a career stage; the model does not assign each scholar a fixed latent quality. In the current DBLP fit, cross-validation selects <span class="math inline">\(\hat\rho=0.6664\)</span>, corresponding to a memory half-life of about 1.71 years.</p>
+<p>The larger AARC analysis removes the geometric constraint first. An unrestricted split-margin AR(6,6) estimates each lag independently across 113 fields and seven domains, then tests whether those free coefficients recover a geometric shape and whether the compressed model retains held-out performance. This makes geometric memory a hypothesis to test, not a pattern imposed by construction.</p>
+</section>
+</section>
+<section id="the-productivity-garden" class="level2">
+<h2 class="anchored" data-anchor-id="the-productivity-garden">The Productivity Garden</h2>
+<p>The reduced models show that history matters, but they do not explain what is being remembered. <strong>The Productivity Garden</strong> is a candidate mechanism: a latent stochastic project-pipeline model in which unfinished projects form a hidden inventory and publications are observable completions.</p>
+<p>In the bare model, new projects <span class="math inline">\(N_{t+1}\)</span> enter a latent stock <span class="math inline">\(G_t\)</span>. Each unresolved project is harvested with probability <span class="math inline">\(h\)</span>, abandoned with probability <span class="math inline">\(d\)</span>, or remains in progress:</p>
+<p><span class="math display">\[
+G_{t+1}=(1-h-d)G_t+N_{t+1},
+\qquad
+\mathbb{E}[q_{t+1}\mid G_t]=hG_t.
+\]</span></p>
+<p>A project planted <span class="math inline">\(\ell\)</span> years ago then contributes in expectation with weight proportional to <span class="math inline">\((1-h-d)^\ell\)</span>. Geometric memory appears as the observable trace of geometric survival in the hidden pipeline.</p>
+<p>This bare model is a null, not a finished explanation. Current work tests which additional mechanisms are needed to transmit latent pipeline memory into real publication trajectories: repeated project yields, persistent planting, shared harvest shocks, congestion from finite effort, abandonment, and scholar or field heterogeneity. The aim is a falsifiable family of models whose extensions make distinguishable empirical predictions.</p>
+<p>The broader mathematical problem is not limited to science: when can a high-dimensional, partially observed production system be represented by a low-dimensional fading-memory state?</p>
+</section>
+<section id="current-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="current-outputs">Current outputs</h2>
+<section id="manuscript-in-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="manuscript-in-preparation">Manuscript in preparation</h3>
+<p><strong>Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, and Aaron Clauset.</strong><br> <em>Stochastic dynamics can drive large differences in researcher productivity.</em></p>
+<p>An earlier version of the project was presented by Sam Zhang at the 5th International Conference on the Science of Science and Innovation (ICSSI 2026). See the <a href="./publications.html">Publications page</a> for current status.</p>
+</section>
+<section id="reproducible-research-code" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-research-code">Reproducible research code</h3>
 <ul>
-<li>mean and variance trajectories</li>
-<li>productivity increments</li>
-<li>cumulative productivity distributions</li>
-<li>career-stage transitions</li>
-<li>rank persistence</li>
-<li>periods of inactivity and return</li>
+<li><a href="https://github.com/crabwife/spaarw_followup">SPAARW follow-up</a>: random-walk reproduction, model lineage, Chapman–Kolmogorov tests, history-prediction comparisons, SE-Hurdle-S, simulation, and trajectory diagnostics.</li>
+<li><a href="https://github.com/crabwife/AARC-DBLP-comparison">AARC–DBLP comparison</a>: matched 13-year cross-source replication and selection-sensitivity analysis.</li>
+<li><a href="https://github.com/crabwife/seven_models_shockley">Seven productivity models</a>: comparative generative-model development and diagnostics.</li>
+<li><a href="https://github.com/crabwife">GitHub profile</a>: additional public code, figures, and computational materials.</li>
 </ul>
+<p>Restricted AARC data remain on approved UVM systems; public materials contain code and derived results rather than privileged individual-level records.</p>
 </section>
+</section>
+<section id="interpretation-boundary" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-boundary">Interpretation boundary</h2>
+<p>The current evidence supports a fading-memory description of scientific productivity. It does not identify a unique causal mechanism, prove that every persistence statistic is exactly geometric, or rule out stable heterogeneity. The purpose of the model sequence is to distinguish those explanations: first establish which observable regularities recur, then determine the smallest latent process capable of producing them jointly.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>My work uses tools from:</p>
-<ul>
-<li>stochastic processes</li>
-<li>time-series analysis</li>
-<li>computational social science</li>
-<li>statistical inference</li>
-<li>simulation-based model evaluation</li>
-<li>complex-systems science</li>
-</ul>
-</section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
-<p>Code and computational materials are available through my <a href="https://github.com/crabwife">GitHub profile</a>.</p>
+<p>My work draws on stochastic processes, discrete-time count models, survival and hazard models, autoregressive and state-space representations, bootstrap inference, held-out simulation, model comparison, time-series analysis, computational social science, and complex-systems science.</p>
 
 
 </section>
