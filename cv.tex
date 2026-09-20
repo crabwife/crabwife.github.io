@@ -1,0 +1,128 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[letterpaper,margin=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{burgundy}{HTML}{6E2639}
+\definecolor{indigo}{HTML}{31365A}
+\definecolor{muted}{HTML}{555555}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.05em,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+\titleformat{\section}{\large\bfseries\color{burgundy}}{}{0pt}{}[\vspace{-3pt}\color{burgundy}\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=indigo,
+  pdftitle={Samantha Lune Magid - Curriculum Vitae},
+  pdfauthor={Samantha Lune Magid},
+  pdfsubject={Academic curriculum vitae}
+}
+
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textit{#4}
+  \end{tabularx}\vspace{-2pt}
+}
+
+\newcommand{\skill}[2]{\textbf{#1:} #2\par\vspace{2pt}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{burgundy} Samantha Lune Magid}\par
+  \vspace{2pt}
+  Applied and Computational Mathematician\par
+  \vspace{3pt}
+  \href{mailto:samantha.magid@uvm.edu}{samantha.magid@uvm.edu}
+  \enspace$\vert$\enspace Burlington, Vermont
+  \enspace$\vert$\enspace \href{https://magid.systems}{magid.systems}
+  \enspace$\vert$\enspace \href{https://github.com/crabwife}{github.com/crabwife}
+  \enspace$\vert$\enspace \href{https://orcid.org/0009-0004-0358-4870}{ORCID}
+\end{center}
+
+\section*{Research Interests}
+Complex and adaptive systems; stochastic processes and history-dependent dynamics; science of science and metaresearch; scientific productivity and career trajectories; discrete-time count and sequential processes; emergent behavior in social and ecological systems; geometric and latent representations; causal inference and quasi-experimental identification; interpretable generative modeling; estuarine and intertidal systems; coupled air-sea climate systems; ethical limits of mathematical modeling.
+
+\section*{Education}
+\entry{University of Vermont}{Expected Spring 2028}{M.S. Complex Systems and Data Science, Vermont Complex Systems Institute}{Burlington, VT}
+\begin{itemize}
+  \item UVM Graduate Merit Scholar.
+  \item Research areas: stochastic scientific productivity, science of science, metaresearch, and computational social science.
+\end{itemize}
+
+\entry{Boston University}{B.S.}{B.S. Data Science, Applied and Mathematical Focus; Minor in Environmental Science}{Boston, MA}
+\begin{itemize}
+  \item Lara Vincent Undergraduate Research Scholar and Award recipient, October 2022.
+\end{itemize}
+
+\section*{Research Experience}
+\entry{Graduate Research Assistant}{May 2026--Present}{Science and Humanity Lab, Vermont Complex Systems Institute}{Burlington, VT}
+\begin{itemize}
+  \item Develop scholar-agnostic stochastic models of scientific productivity to test whether persistent career differences can emerge from dynamic processes rather than fixed individual traits.
+  \item Fit and simulate autoregressive, hurdle, self-exciting, and history-dependent models using longitudinal publication data from DBLP and the Academic Analytics Research Center.
+  \item Identified distinct extensive and intensive margins of productivity, geometric memory decay, declining restart hazards after inactivity, and persistent but dynamically generated rank structure.
+  \item Design distributional, predictive, and trajectory-level evaluations using held-out simulation, bootstrap confidence intervals, cross-validation, rank-mixing analyses, goodness-of-fit tests, and adversarial null models.
+  \item Built reproducible Python pipelines for data preparation, model fitting, simulation, diagnostics, and publication-quality visualization across multiple linked research repositories.
+  \item Contribute to manuscript development, figures, technical reports, conference materials, and a multi-field extension of prior work on scientific productivity as a stochastic process.
+\end{itemize}
+
+\section*{Manuscripts and Presentations}
+\textbf{Zhang, S.; \textbf{Magid, S.}; Kumar, A.; Larremore, D. B.; Clauset, A.}
+``Stochastic dynamics can drive large differences in researcher productivity.'' \textit{Manuscript in preparation.}
+
+\vspace{2pt}
+Related findings were presented by Sam Zhang as a lightning talk at the \textit{5th International Conference on the Science of Science and Innovation (ICSSI 2026)}, Boulder, Colorado, June 29, 2026.
+
+\vspace{3pt}
+\textbf{The Productivity Garden.} Independent paper in progress developing a stochastic project-pipeline model of publication timing, attrition, memory, and clustered output.
+
+\section*{Research Software}
+\textbf{Selected repository:} \href{https://github.com/crabwife/spaarw_followup}{spaarw\_followup} --- model lineage, memory tests, trajectory simulation, empirical diagnostics, and reproducible figures for the scientific-productivity project. Additional public code includes \href{https://github.com/crabwife/seven_models_shockley}{seven\_models\_shockley} and \href{https://github.com/crabwife/AARC-DBLP-comparison}{AARC-DBLP-comparison}.
+
+\newpage
+
+\section*{Laboratory and Teaching Experience}
+\entry{Graduate Laboratory Supervisor / Advanced Lab Professional II}{July 2026--Present}{Human Cell Biology Program, University of Vermont}{Burlington, VT}
+\begin{itemize}
+  \item Run the hands-on operations of the Human Cell Biology preparation laboratory, coordinating materials, protocols, equipment, and readiness for instructional labs.
+  \item Supervise preparation-lab technicians and coordinate with faculty and staff to support safe, consistent, and technically reliable laboratory instruction.
+\end{itemize}
+
+\section*{Undergraduate Research}
+\entry{Undergraduate Principal Investigator}{September 2022--March 2023}{\textit{Uca spp.} Bioturbation Survey, Boston University Marine Program}{Boston, MA}
+\begin{itemize}
+  \item Proposed and led an independent study of fiddler-crab overpopulation as a complex biophysical system, examining how stochastic bioturbation feedback cycles contribute to salt-marsh erosion.
+  \item Designed and fabricated a custom tidal-forcing generator for controlled simulation of periodic intertidal conditions without disrupting field sites.
+  \item Coordinated with marine scientists and field experts, completed the project's first phase, and produced reusable tools for future estuarine-modeling research.
+\end{itemize}
+
+\section*{Mathematical and Computational Skills}
+\skill{Stochastic and complex systems}{Stochastic and Markov processes; discrete-time count and sequential models; autoregressive, hurdle, survival, hazard, and history-dependent models; geometric memory kernels; feedback-aware dynamical systems; emergence and nonlinearity; stochastic biological systems; latent state-space models.}
+\skill{Statistical and computational methods}{Monte Carlo simulation; bootstrap inference; held-out simulation; cross-validation; goodness-of-fit testing; time-series analysis; low-dimensional approximations; rank-persistence and transition analysis; robustness and sensitivity analysis.}
+\skill{Optimization, learning, and causal methods}{Discrete and continuous optimization; kernel methods; geometric representation; neural-network architectures; black-box optimization; simulated annealing; causal inference; quasi-experimental identification; adversarial and game-theoretic models.}
+\skill{Programming}{Python, R, SQL, Rust.}
+\skill{Python scientific stack}{pandas, NumPy, SciPy, statsmodels, scikit-learn, JAX, NumPyro, PyTorch, TensorFlow, XGBoost, Matplotlib, seaborn.}
+\skill{Research and visualization tools}{Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, NetCDF, MySQL, Power BI, Tableau.}
+\skill{Laboratory and field}{Preparation-lab supervision; wet-lab techniques; animal handling; laboratory safety; IACUC certification; experimental-system design.}
+
+\section*{Affiliations}
+Member, American Statistical Association (AmStat) \enspace$\vert$\enspace Member, Society for Industrial and Applied Mathematics (SIAM) \enspace$\vert$\enspace Vermont Complex Systems Institute \enspace$\vert$\enspace Science and Humanity Lab
+
+\vfill
+\begin{center}
+  {\small\color{muted} Updated September 2026}
+\end{center}
+
+\end{document}
