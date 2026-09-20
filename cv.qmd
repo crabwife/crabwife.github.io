@@ -78,14 +78,16 @@ Presentations, posters, and invited talks will be listed here.
 
 **Programming:** Python, R, SQL, Rust
 
-**Scientific computing and machine learning:** pandas, NumPy, SciPy, scikit-learn, Matplotlib/seaborn, TensorFlow, XGBoost
+**Scientific computing and mathematical modeling:** pandas, NumPy, SciPy, statsmodels, scikit-learn, Matplotlib, seaborn, JAX, NumPyro, PyTorch, TensorFlow, XGBoost
 
 **Research and visualization tools:** Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau
 
-**Methods:** Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization
+**Mathematical and statistical methods:** Stochastic and Markov processes, discrete-time count and sequential models, autoregressive and hurdle models, survival and hazard models, history-dependent processes, geometric memory kernels, low-dimensional approximations, Monte Carlo simulation, bootstrap inference, time-series analysis, and data visualization
 
 ## Affiliations
 
+- Member, [American Statistical Association (AmStat)](https://www.amstat.org/)
+- Member, [Society for Industrial and Applied Mathematics (SIAM)](https://www.siam.org/)
 - Vermont Complex Systems Institute | with [Dr. Sam Zhang](https://sam.zhang.fyi/main/)
 - Boston University Faculty of Computing & Data Sciences | with [Dr. Mayank Varia](https://www.mvaria.com/)
 - Boston University Spark! Program
