@@ -53,14 +53,14 @@
     "href": "cv.html#technical-skills",
     "title": "Curriculum Vitae",
     "section": "Technical Skills",
-    "text": "Technical Skills\nProgramming: Python, R, SQL, Rust\nScientific computing and machine learning: pandas, NumPy, SciPy, scikit-learn, Matplotlib/seaborn, TensorFlow, XGBoost\nResearch and visualization tools: Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau\nMethods: Statistical modeling, stochastic simulation, time-series analysis, generative modeling, machine learning, geospatial analysis, and data visualization"
+    "text": "Technical Skills\nProgramming: Python, R, SQL, Rust\nScientific computing and mathematical modeling: pandas, NumPy, SciPy, statsmodels, scikit-learn, Matplotlib, seaborn, JAX, NumPyro, PyTorch, TensorFlow, XGBoost\nResearch and visualization tools: Git, GitHub, Jupyter, Quarto, LaTeX, QGIS, ArcGIS, Power BI, Tableau\nMathematical and statistical methods: Stochastic and Markov processes, discrete-time count and sequential models, autoregressive and hurdle models, survival and hazard models, history-dependent processes, geometric memory kernels, low-dimensional approximations, Monte Carlo simulation, bootstrap inference, time-series analysis, and data visualization"
   },
   {
     "objectID": "cv.html#affiliations",
     "href": "cv.html#affiliations",
     "title": "Curriculum Vitae",
     "section": "Affiliations",
-    "text": "Affiliations\n\nVermont Complex Systems Institute | with Dr. Sam Zhang\nBoston University Faculty of Computing & Data Sciences | with Dr. Mayank Varia\nBoston University Spark! Program\nBoston University Marine Program | with Dr. Robinson Fulweiler"
+    "text": "Affiliations\n\nMember, American Statistical Association (AmStat)\nMember, Society for Industrial and Applied Mathematics (SIAM)\nVermont Complex Systems Institute | with Dr. Sam Zhang\nBoston University Faculty of Computing & Data Sciences | with Dr. Mayank Varia\nBoston University Spark! Program\nBoston University Marine Program | with Dr. Robinson Fulweiler"
   },
   {
     "objectID": "cv.html#contact",
@@ -74,21 +74,14 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.\nThe Productivity Garden\nPaper in progress.\nThis paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms."
+    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.\n\n\n\nPaper in progress.\nThis paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms."
   },
   {
     "objectID": "publications.html#publications-in-progress",
     "href": "publications.html#publications-in-progress",
     "title": "Publications",
     "section": "",
-    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.\nThe Productivity Garden\nPaper in progress.\nThis paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms."
-  },
-  {
-    "objectID": "publications.html#the-productivity-garden",
-    "href": "publications.html#the-productivity-garden",
-    "title": "Publications",
-    "section": "The Productivity Garden",
-    "text": "The Productivity Garden\nPaper in progress.\nThis paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms."
+    "text": "Sam Zhang, Samantha Magid, Aanjaneya Kumar, Daniel B. Larremore, Aaron Clauset\nManuscript in preparation.\nThis work develops and evaluates scholar-agnostic generative models of scientific productivity, with particular attention to self-excitation, inactivity, rank persistence, and heavy-tailed changes in annual output.\n\n\n\nPaper in progress.\nThis paper uses the garden as a deliberately spare abstraction for the hidden pipeline behind scientific output: projects are planted, develop over uncertain intervals, sometimes die, and occasionally arrive together as a harvest of publications. It treats the metaphor as a testable stochastic mechanism rather than an explanation by analogy. The work will use simulation and comparison with empirical trajectories to ask whether combinations of delay, attrition, and history dependence can account for the shape of scientific careers, and what observable signatures would distinguish those mechanisms."
   },
   {
     "objectID": "publications.html#preprints",
@@ -124,62 +117,6 @@
     "title": "Research",
     "section": "",
     "text": "My current work in the Science and Humanity Lab asks a deliberately narrow question: what temporal structure is required to explain scientific-productivity trajectories without treating persistent differences among scholars as fixed differences in inherent ability?\nAnnual publications are observable. The process that generates them is not. Projects begin, compete for limited attention, develop over uncertain intervals, sometimes die, and sometimes arrive together. I therefore study publication counts as sparse observations of a history-dependent stochastic production system.\nThis work extends Scientific Productivity as a Random Walk. The random-walk account establishes that highly variable individual careers can generate a smooth aggregate trajectory. My follow-up asks whether current annual productivity is itself a sufficient state from which to generate the future.\nIn the data examined so far, it is not."
-  },
-  {
-    "objectID": "research.html#scientific-productivity-as-a-stochastic-process",
-    "href": "research.html#scientific-productivity-as-a-stochastic-process",
-    "title": "Research",
-    "section": "",
-    "text": "My current research at the Science and Humanity Lab examines how scientific productivity changes over the course of a career. I develop scholar-agnostic stochastic models that aim to reproduce observed features of publication trajectories without assuming stable, inherent differences in ability between researchers.\nThis work focuses on:\n\nself-exciting and history-dependent processes\nextensive and intensive margins of productivity\nrank persistence and rank mixing\nheavy-tailed year-to-year changes\ntemporary inactivity, restart, and dropout\ngenerative model comparison"
-  },
-  {
-    "objectID": "research.html#complex-systems",
-    "href": "research.html#complex-systems",
-    "title": "Research",
-    "section": "Complex systems",
-    "text": "Complex systems\nMore broadly, I am interested in how persistent individual trajectories emerge from interactions among stochastic dynamics, accumulated history, social structure, and institutional opportunity."
-  },
-  {
-    "objectID": "research.html#research-in-progress",
-    "href": "research.html#research-in-progress",
-    "title": "Research",
-    "section": "Research in progress",
-    "text": "Research in progress\nIterative development of SE-Hurdle-S\nSE-Hurdle-S did not begin as a finished model. It has emerged through repeated cycles of building a deliberately simple stochastic process, simulating entire careers, identifying where it fails, and adding only the mechanism needed to repair that failure. Starting from random-walk and autoregressive baselines, we introduced a hurdle for publication versus inactivity, career-stage structure, and an exponentially weighted memory of prior output. Each iteration is tested against the full empirical shape of scientific careers—not just a single goodness-of-fit score—including rank persistence and mixing, heavy-tailed changes, inequality, dropout, and restart. The goal is a model whose mechanisms remain interpretable even when the trajectories they generate are complicated.\nThe project evaluates whether parsimonious dynamic models can jointly reproduce:\n\nmean and variance trajectories\nproductivity increments\ncumulative productivity distributions\ncareer-stage transitions\nrank persistence\nperiods of inactivity and return"
-  },
-  {
-    "objectID": "research.html#methods",
-    "href": "research.html#methods",
-    "title": "Research",
-    "section": "Methods",
-    "text": "Methods\nMy work draws on stochastic processes, discrete-time count models, survival and hazard models, autoregressive and state-space representations, bootstrap inference, held-out simulation, model comparison, time-series analysis, computational social science, and complex-systems science."
-  },
-  {
-    "objectID": "research.html#code",
-    "href": "research.html#code",
-    "title": "Research",
-    "section": "Code",
-    "text": "Code\nCode and computational materials are available through my GitHub profile."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Samantha Magid",
-    "section": "",
-    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Researcher at the Science and Humanity Lab. Unapologetic gay woman in STEM.\nResearch · Publications · CV\n\nsamantha.magid@uvm.edu\nGitHub | Poems and other writings"
-  },
-  {
-    "objectID": "index.html#current-research",
-    "href": "index.html#current-research",
-    "title": "Samantha Magid",
-    "section": "Current Research",
-    "text": "Current Research\nMy current work with Dr. Sam Zhang asks whether persistent differences in scientific productivity can emerge from parsimonious, history-dependent stochastic processes without requiring stable inherent differences among scholars. The work seeks to debunk the eugenicist, racist suggestions of William Shockley, the white, male Nobel laureate who felt science is too egalitarian for its rewards to be anything but representative of individual merit. Shockley suggested that scientific productivity was the probabilistic result of inherent, immutable, individual traits. As we develop a follow-up to Scientific Productivity as a Random Walk, we scientifically validate a long-overdue departure from Shockley’s notions.\nIndependently, I investigate the application and design of causal inference and how it is used, and misused across scientific disciplines. I also am pursuing appraisals of multilayer neural networks involving stochastic-gate LSTMs.\nRead more about my research →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   },
   {
     "objectID": "research.html#scientific-productivity-as-a-partially-observed-stochastic-process",
@@ -229,5 +166,33 @@
     "title": "Research",
     "section": "Interpretation boundary",
     "text": "Interpretation boundary\nThe current evidence supports a fading-memory description of scientific productivity. It does not identify a unique causal mechanism, prove that every persistence statistic is exactly geometric, or rule out stable heterogeneity. The purpose of the model sequence is to distinguish those explanations: first establish which observable regularities recur, then determine the smallest latent process capable of producing them jointly."
+  },
+  {
+    "objectID": "research.html#methods",
+    "href": "research.html#methods",
+    "title": "Research",
+    "section": "Methods",
+    "text": "Methods\nMy work draws on stochastic processes, discrete-time count models, survival and hazard models, autoregressive and state-space representations, bootstrap inference, held-out simulation, model comparison, time-series analysis, computational social science, and complex-systems science."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Samantha Magid",
+    "section": "",
+    "text": "Applied and computational mathematician studying scientific productivity, stochastic processes, computational social science, and generative modeling. Researcher at the Science and Humanity Lab. Unapologetic gay woman in STEM.\nResearch · Publications · CV\n\nsamantha.magid@uvm.edu\nGitHub | Poems and other writings"
+  },
+  {
+    "objectID": "index.html#current-research",
+    "href": "index.html#current-research",
+    "title": "Samantha Magid",
+    "section": "Current Research",
+    "text": "Current Research\nMy current work asks whether persistent differences in scientific productivity can emerge from parsimonious, history-dependent stochastic processes without requiring stable inherent differences among scholars. The work seeks to debunk the eugenicist, racist suggestions of William Shockley, the white, male Nobel laureate who felt science was too egalitarian for its rewards to be anything but representative of individual merit. Shockley suggested that scientific productivity was the probabilistic result of inherent, immutable, individual traits. As we develop a follow-up to Scientific Productivity as a Random Walk, we scientifically validate a long-overdue departure from Shockley’s notions.\nRead more about my research →"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
