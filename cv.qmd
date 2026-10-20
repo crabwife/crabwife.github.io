@@ -41,7 +41,7 @@ Faculty of Computing & Data Sciences
 
 ## Research Experience
 
-### Research Assistant
+### Graduate Researcher
 
 **Science and Humanity Lab** | _Vermont Complex Systems Institute_
 <span class="cv-date">May 2026–present</span>
@@ -65,6 +65,16 @@ Faculty of Computing & Data Sciences
 - Developed an experimental system for studying feedback-driven marsh dynamics without disrupting field sites.
 - Coordinated with marine scientists and field experts as one of the program’s youngest principal investigators.
 - Completed the project’s first phase and produced reusable tools for future estuarine-modeling research
+
+## Fellowships and Outreach
+
+### VALI AI Fellow
+
+**[Vermont AI Literacy Initiative (VALI)](https://vermontcomplexsystems.org/projects/vali/)** | _Vermont Complex Systems Institute_\
+<span class="cv-date">2026–present</span>
+
+- Contribute to an interdisciplinary AI literacy initiative developing accessible, hands-on curricula for Vermont schools and communities.
+- Support critical understanding of how AI systems work, their limitations and biases, and their broader social implications.
 
 ## Publications
 
